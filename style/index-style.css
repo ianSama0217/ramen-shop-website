@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "myFont";
+  src: url("./TaipeiSansTCBeta-Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label,
+button {
+  font-weight: normal;
+  font-family: "myFont", DFkai-sb, sans-serif;
+}
+
+body {
+  background-color: rgb(248, 246, 231);
+}
+body main .content {
+  display: flex;
+}
+body main .content img {
+  width: 50%;
+  height: auto;
+  margin: 5%;
+  border-radius: 8px;
+}
+body main .content .contentTextArea {
+  margin: 5%;
+}
+body main .content .contentTextArea .contentTitleArea {
+  display: flex;
+}
+body main .content .contentTextArea .contentTitleArea img {
+  width: 6vw;
+  height: 6vw;
+}
+body main .content .contentTextArea .contentTitleArea h2 {
+  margin: 3rem 0 1.5rem 0;
+  font-size: 2rem;
+}
+body main .content .contentTextArea p {
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+  line-height: 1.35rem;
+}
+body main .content .contentTextArea .seeMoreArea {
+  display: flex;
+  line-height: 3rem;
+  transition: all 0.5s ease;
+}
+body main .content .contentTextArea .seeMoreArea:hover a {
+  color: rgba(250, 86, 86, 0.8);
+  scale: 1.2;
+}
+body main .content .contentTextArea .seeMoreArea:hover a::after {
+  border-bottom-color: rgba(250, 86, 86, 0.8);
+}
+body main .content .contentTextArea .seeMoreArea a {
+  text-decoration: none;
+  color: rgb(116, 115, 115);
+  margin-top: 0.4rem;
+  position: relative;
+}
+body main .content .contentTextArea .seeMoreArea a::after {
+  content: "";
+  display: block;
+  width: 200%;
+  border-bottom: 1px solid rgb(116, 115, 115);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+body main .recommend {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+body main .recommend .recommendTitleArea {
+  display: flex;
+  align-self: center;
+  margin-bottom: 10vh;
+}
+body main .recommend .recommendTitleArea .recommedTitle {
+  align-self: center;
+  font-size: 2rem;
+}
+body main .recommend .recommendTitleArea img {
+  width: 6vw;
+  height: 6vw;
+}
+body main .recommend .ramenArea {
+  display: flex;
+  justify-content: space-between;
+}
+body main .recommend .ramenArea .singleRamenArea {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5 ease;
+}
+body main .recommend .ramenArea .singleRamenArea:hover .recommendImg {
+  border: 3px solid #a5cf7e;
+  transform: scale(0.9);
+}
+body main .recommend .ramenArea .singleRamenArea:hover h2 {
+  color: #777;
+}
+body main .recommend .ramenArea .singleRamenArea .recommendImg {
+  border: 0.5rem solid rgba(63, 173, 41, 0.5);
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden;
+  border-radius: 50%;
+}
+body main .recommend .ramenArea .singleRamenArea .recommendImg img {
+  width: 100%;
+  height: auto;
+}
+body main .recommend .ramenArea .singleRamenArea .recommendImg .fishGuide {
+  -o-object-position: 0rem -1.5rem;
+     object-position: 0rem -1.5rem;
+}
+body main .recommend .ramenArea .singleRamenArea .recommendImg .chickenSoup {
+  -o-object-position: 0rem -4rem;
+     object-position: 0rem -4rem;
+}
+body main .recommend .ramenArea .singleRamenArea .recommendImg .soySauce {
+  -o-object-position: 0rem -3rem;
+     object-position: 0rem -3rem;
+}
+body main .recommend .ramenArea .singleRamenArea .recommendImg .BBQporkRice {
+  -o-object-position: 0rem -4rem;
+     object-position: 0rem -4rem;
+}
+body main .recommend .ramenArea .singleRamenArea h2 {
+  align-self: center;
+  margin-top: 2rem;
+}
+body main .news {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+body main .news .newTitleArea {
+  display: flex;
+  align-self: center;
+  margin-bottom: 10vh;
+}
+body main .news .newTitleArea img {
+  width: 6vw;
+  height: 6vw;
+}
+body main .news .newTitleArea .newsTitle {
+  font-size: 2rem;
+  margin: 1.5rem;
+}
+body main .news .newsArea {
+  display: flex;
+  justify-content: space-around;
+}
+body main .news .newsArea .singleNewsArea {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+}
+body main .news .newsArea .singleNewsArea:hover .newsImg {
+  border: 0.25rem solid #a5cf7e;
+}
+body main .news .newsArea .singleNewsArea:hover .newsImg img {
+  transform: scale(1.1);
+}
+body main .news .newsArea .singleNewsArea:hover a {
+  background-color: red;
+  color: white;
+}
+body main .news .newsArea .singleNewsArea .newsImg {
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 0.5rem solid rgba(63, 173, 41, 0.5);
+}
+body main .news .newsArea .singleNewsArea .newsImg img {
+  width: 100%;
+  height: auto;
+}
+body main .news .newsArea .singleNewsArea .newsImg .oysterRamen {
+  -o-object-position: 0px -4rem;
+     object-position: 0px -4rem;
+}
+body main .news .newsArea .singleNewsArea .newsImg .JiroRamen {
+  -o-object-position: 0px -4rem;
+     object-position: 0px -4rem;
+}
+body main .news .newsArea .singleNewsArea .newsImg .beefRamen {
+  -o-object-position: 0px -4rem;
+     object-position: 0px -4rem;
+}
+body main .news .newsArea .singleNewsArea .newsImg .BBQpork {
+  -o-object-position: 0px -3rem;
+     object-position: 0px -3rem;
+}
+body main .news .newsArea .singleNewsArea h3 {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-top: 1rem;
+}
+body main .news .newsArea .singleNewsArea p {
+  font-size: 1.15rem;
+  line-height: 1.35rem;
+  margin: 0.5rem;
+  color: #505050;
+}
+body main .news .newsArea .singleNewsArea a {
+  text-decoration: none;
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem;
+  color: #232323;
+  font-size: 1.35rem;
+  border-radius: 12px;
+  border: 1px solid red;
+}/*# sourceMappingURL=index-style.css.map */

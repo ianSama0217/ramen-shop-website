@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "myFont";
+  src: url("./TaipeiSansTCBeta-Bold.ttf");
+}
+
+$themeColor: rgba(248, 246, 231, 1);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label,
+button {
+  font-weight: normal;
+  font-family: "myFont", DFkai-sb, sans-serif;
+}
+
+body {
+  background-color: $themeColor;
+
+  main {
+    .content {
+      // border: 1px solid red;
+      display: flex;
+
+      img {
+        width: 50%;
+        height: auto;
+        margin: 5%;
+        border-radius: 8px;
+      }
+
+      .contentTextArea {
+        margin: 5%;
+
+        .contentTitleArea {
+          display: flex;
+
+          img {
+            width: 6vw;
+            height: 6vw;
+          }
+
+          h2 {
+            margin: 3rem 0 1.5rem 0;
+            font-size: 2rem;
+          }
+        }
+
+        p {
+          margin-bottom: 1.5rem;
+          font-size: 1.15rem;
+          line-height: 1.35rem;
+        }
+
+        .seeMoreArea {
+          display: flex;
+          line-height: 3rem;
+          transition: all 0.5s ease;
+
+          &:hover {
+            a {
+              color: rgba(250, 86, 86, 0.8);
+              scale: 1.2;
+
+              &::after {
+                border-bottom-color: rgba(250, 86, 86, 0.8);
+              }
+            }
+          }
+
+          a {
+            text-decoration: none;
+            color: rgb(116, 115, 115);
+            margin-top: 0.4rem;
+            position: relative;
+
+            &::after {
+              content: "";
+              display: block;
+              width: 200%;
+              border-bottom: 1px solid rgb(116, 115, 115);
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .recommend {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5%;
+
+      .recommendTitleArea {
+        display: flex;
+        align-self: center;
+        margin-bottom: 10vh;
+
+        .recommedTitle {
+          align-self: center;
+          font-size: 2rem;
+        }
+
+        img {
+          width: 6vw;
+          height: 6vw;
+        }
+      }
+
+      .ramenArea {
+        // border: 1px solid blue;
+        display: flex;
+        justify-content: space-between;
+
+        .singleRamenArea {
+          // border: 1px solid green;
+          display: flex;
+          flex-direction: column;
+          transition: all 0.5 ease;
+
+          &:hover {
+            .recommendImg {
+              border: 3px solid #a5cf7e;
+              transform: scale(0.9);
+            }
+
+            h2 {
+              color: #777;
+            }
+          }
+
+          .recommendImg {
+            border: 0.5rem solid rgba(63, 173, 41, 0.5);
+            width: 20vw;
+            height: 20vw;
+            overflow: hidden;
+            border-radius: 50%;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+
+            .fishGuide {
+              object-position: 0rem -1.5rem;
+            }
+
+            .chickenSoup {
+              object-position: 0rem -4rem;
+            }
+
+            .soySauce {
+              object-position: 0rem -3rem;
+            }
+
+            .BBQporkRice {
+              object-position: 0rem -4rem;
+            }
+          }
+
+          h2 {
+            align-self: center;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+
+    .news {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+
+      .newTitleArea {
+        display: flex;
+        align-self: center;
+        margin-bottom: 10vh;
+
+        img {
+          width: 6vw;
+          height: 6vw;
+        }
+
+        .newsTitle {
+          font-size: 2rem;
+          margin: 1.5rem;
+        }
+      }
+
+      .newsArea {
+        display: flex;
+        justify-content: space-around;
+
+        .singleNewsArea {
+          // border: 1px solid green;
+          width: 20%;
+          display: flex;
+          flex-direction: column;
+          transition: all 1s ease;
+
+          &:hover {
+            .newsImg {
+              border: 0.25rem solid #a5cf7e;
+              img {
+                transform: scale(1.1);
+              }
+            }
+
+            a {
+              background-color: red;
+              color: white;
+            }
+          }
+
+          .newsImg {
+            // border: 3px solid pink;
+            width: 20vw;
+            height: 20vw;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 0.5rem solid rgba(63, 173, 41, 0.5);
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+
+            .oysterRamen {
+              object-position: 0px -4rem;
+            }
+
+            .JiroRamen {
+              object-position: 0px -4rem;
+            }
+
+            .beefRamen {
+              object-position: 0px -4rem;
+            }
+
+            .BBQpork {
+              object-position: 0px -3rem;
+            }
+          }
+
+          h3 {
+            font-size: 1.5rem;
+            align-self: center;
+            margin-top: 1rem;
+          }
+
+          p {
+            font-size: 1.15rem;
+            line-height: 1.35rem;
+            margin: 0.5rem;
+            color: #505050;
+          }
+
+          a {
+            text-decoration: none;
+            align-self: center;
+            padding: 0.5rem 1.5rem;
+            margin: 1rem;
+            color: #232323;
+            font-size: 1.35rem;
+            border-radius: 12px;
+            border: 1px solid red;
+          }
+        }
+      }
+    }
+  }
+}

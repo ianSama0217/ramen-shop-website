@@ -1,0 +1,155 @@
+$fontColor: white;
+
+a {
+  text-decoration: none;
+  color: $fontColor;
+}
+
+body {
+  footer {
+    background-image: url("/image/footerImg/footer-background.jpg");
+    background-size: cover;
+    background-position: 0% 40%;
+    margin-top: 10vh;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -10px 6px 6px rgba(0, 0, 0, 0.2);
+
+    .footerLogoArea {
+      border: 0px solid blue;
+      display: flex;
+      flex-direction: column;
+      padding-left: 2vw;
+      img {
+        width: 8vw;
+        height: 8vw;
+        align-self: center;
+      }
+      h1 {
+        color: $fontColor;
+        font-size: 3rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .footerAboutArea {
+      border: 0px solid green;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      h3 {
+        color: $fontColor;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .footerAboutATagArea {
+        border: 0px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 8rem;
+        margin-bottom: 15rem;
+
+        a {
+          padding: 1rem;
+          border-radius: 10px;
+          font-size: 1.15rem;
+          transition: all 0.5s ease;
+
+          &:hover {
+            background-color: #777;
+            color: black;
+          }
+        }
+      }
+    }
+
+    .footerSocialMediaArea {
+      //   border: 1px solid red;
+      width: 15vw;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: $fontColor;
+        font-size: 1.5rem;
+        align-self: center;
+        margin-bottom: 2rem;
+      }
+
+      .singleSocialMediaArea {
+        // border: 1px solid blue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+
+        &:hover {
+          background-color: #777;
+
+          img {
+            filter: invert(0%);
+          }
+          a {
+            color: black;
+          }
+        }
+
+        img {
+          filter: invert(80%);
+          width: 4vw;
+          height: 4vw;
+        }
+
+        a {
+        }
+      }
+    }
+
+    .footerConnectionArea {
+      //   border: 1px solid red;
+      width: 20vw;
+      margin-right: 3vw;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: $fontColor;
+        font-size: 1.5rem;
+      }
+      form {
+        // border: 5px solid green;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 2rem;
+
+        label {
+          color: $fontColor;
+          font-size: 1.15rem;
+          margin-top: 1.5rem;
+        }
+
+        input {
+          border: none;
+          height: 1.5rem;
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        button {
+          height: 2rem;
+          margin: 0px 5em;
+          padding: 0.5rem 0.5rem;
+          border: none;
+          background-color: rgba(255, 255, 255, 0.5);
+          font-size: 1.15rem;
+        }
+      }
+    }
+  }
+}
